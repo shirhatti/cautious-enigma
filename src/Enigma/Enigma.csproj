@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Assets_Oras>../../binaries/oras</Assets_Oras>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Pack="true" PackagePath="build\" Include="build\**\*.xml; build\**\*.props; build\**\*.targets;" />
+
+    <!-- Oras assets (for Enigma) -->
+    <_Asset PackagePath="tools/win-x64/" Include="$(Assets_Oras)/win-x64/oras.exe" />
+
+    <None Include="@(_Asset)" Pack="true" Visible="false" />
+  </ItemGroup>
+
+</Project>
