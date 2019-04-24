@@ -13,6 +13,8 @@
 
     <!-- Oras assets (for Enigma) -->
     <_Asset PackagePath="tools/win-x64/" Include="$(Assets_Oras)/win-x64/oras.exe" />
+    <_Asset PackagePath="tools/osx-x64/" Include="$(Assets_Oras)/osx-x64/oras" />
+    <_Asset PackagePath="tools/linux-x64/" Include="$(Assets_Oras)/linux-x64/oras" />
 
     <None Include="@(_Asset)" Pack="true" Visible="false" />
   </ItemGroup>
