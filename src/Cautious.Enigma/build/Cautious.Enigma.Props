@@ -6,7 +6,7 @@
   <!-- Name of this file must match package ID. -->
 
   <PropertyGroup>
-    <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\Enigma.dll</TaskAssembly>
+    <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\Cautious.Enigma.dll</TaskAssembly>
   </PropertyGroup>
 
   <UsingTask TaskName="MSBuildTasks.OrasPush" AssemblyFile="$(TaskAssembly)" />
