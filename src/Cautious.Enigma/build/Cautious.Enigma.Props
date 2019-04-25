@@ -7,6 +7,7 @@
 
   <PropertyGroup>
     <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\netstandard2.0\Cautious.Enigma.dll</TaskAssembly>
+    <OrasExe>$(MSBuildThisFileDirectory)..\tools\win-x64\oras.exe</OrasExe>
   </PropertyGroup>
 
   <UsingTask TaskName="MSBuildTasks.OrasPush" AssemblyFile="$(TaskAssembly)" />
