@@ -10,8 +10,17 @@ namespace MSBuildTasks
         [Required]
         public string OrasExe { get; set; }
 
+        [Required]
+        public string ImageName { get; set; }
+
+        [Required]
+        public string PublishDir { get; set; }
+
         public override bool Execute()
         {
+            Log.LogMessage(MessageImportance.High, ImageName);
+            Log.LogMessage(MessageImportance.High, PublishDir);
+
             var psi = new ProcessStartInfo(fileName: OrasExe,
                                            arguments: "--help");
             psi.RedirectStandardOutput = true;

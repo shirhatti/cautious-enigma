@@ -7,7 +7,7 @@
   <!-- Name of this file must match package ID. -->
 
   <Target Name="Oras_Push" AfterTargets="Publish">
-    <OrasPush OrasExe="$(OrasExe)" />
+    <OrasPush OrasExe="$(OrasExe)" ImageName="$(ImageName)" PublishDir="$(PublishDir)" />
   </Target>
 
 </Project>

@@ -14,4 +14,9 @@
     <PackageReference Include="Cautious.Enigma" Version="0.1.0-*" PrivateAssets="All"/>
   </ItemGroup>
 
+  <PropertyGroup>
+    <VersionSuffix>build$([System.DateTime]::Now.ToString('yyyyMMdd-HHmm'))</VersionSuffix>
+    <ImageName>somecontainerregistry.azurecr.io/hello-world:$(VersionSuffix)</ImageName>
+  </PropertyGroup>
+
 </Project>
