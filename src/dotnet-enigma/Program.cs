@@ -17,7 +17,8 @@ namespace Enigma
                     "msbuild",
                     projectFile,
                     "/nologo",
-                    "/t:Restore;Build;Publish;DisplayMessages", // defined in Oras.targets
+                    "/restore",
+                    "/t:Publish",
                     "/p:CustomAfterMicrosoftCommonTargets=" + targetsFile,
                     "/p:CustomAfterMicrosoftCommonCrossTargetingTargets=" + targetsFile,
                     "/bl"

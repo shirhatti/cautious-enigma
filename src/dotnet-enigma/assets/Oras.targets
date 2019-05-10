@@ -15,7 +15,7 @@
     <OrasExe Condition="$(IsLinux)==true">$(MSBuildThisFileDirectory)..\linux-x64\oras</OrasExe>
   </PropertyGroup>
 
-    <Target Name="DisplayMessages" DependsOnTargets="Publish">  
+    <Target Name="DisplayMessages" AfterTargets="Publish" >  
         <Message Importance="High" Text="Project File Name = $(MSBuildProjectFile)" />  
         <Message Importance="High" Text="Project Extension = $(MSBuildProjectExtension)" />
         <Message Importance="High" Text="Oras = $(OrasExe)" />
